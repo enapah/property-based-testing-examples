@@ -1,0 +1,20 @@
+{
+  "name": "property-based-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:watch": "npm run test -- -w",
+    "test": "mocha test --require setup.js",
+    "coverage": "istanbul cover _mocha --print detail --root src -- test --require setup.js"
+  },
+  "author": "Peter Kedemo <peter.kedemo@gmail.com>",
+  "license": "None",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "deep-freeze": "^0.0.1",
+    "istanbul": "^0.4.5",
+    "jsverify": "^0.7.1",
+    "mocha": "^2.4.5"
+  }
+}
